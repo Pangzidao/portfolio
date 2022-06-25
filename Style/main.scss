@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "banhaus";
+    src: url(/Style/BauhausRegular.ttf)
+}
+
+*{
+    color:black;
+    font-family: "banhaus",'Times New Roman', Times, serif;
+}
+
+h1,h2{
+    text-decoration: underline;
+}
+
+body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0%;
+
+    header{
+        flex-basis: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            font-size: xx-large;
+        }
+
+        nav{
+            flex-basis: 20%;
+            display: flex;
+            justify-content: space-between;
+            a{
+                font-size: xx-large;
+            }
+
+        }
+
+    }
+
+    #me{
+        flex-basis: 40%;
+        margin-top:30px;
+        border-radius: 40px;
+        background-color: rgb(33, 64, 154);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        height: fit-content;
+        &:hover{
+            p{
+                display: flex;}
+        }
+        h2{
+            text-align: center;
+            color: white;
+            font-size: x-large;
+
+
+        }
+        p{
+            text-align: justify;
+            padding: 5%;
+            color: white;
+            font-size: large;
+            display:none;
+            transition:none 2s;
+        }
+    }
+
+    #skills{
+        flex-basis:40%;
+        margin-top:30px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(190,30,45);
+        border-radius: 40px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        height: fit-content;
+        &:hover{
+            li{
+                display: flex;
+            }
+        }
+
+
+        h2{
+            text-align: center;
+            color: white;
+
+         
+        }
+
+        ul{
+            display: flex;
+            flex-basis: 100%;
+            align-items: center;
+            list-style: none;
+            flex-wrap: wrap;
+            li{
+                border:solid;
+                flex-basis: 15%;
+                margin: 2%;
+                text-align: center;
+                padding: 2%;
+                color: white;
+                border-radius: 20px;
+                display: none;
+            }
+        }
+
+    }
+
+    #projet{
+        margin-top:30px;
+        flex-basis:90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: rgb(255,222,23);
+        border-radius: 40px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        &:hover{
+            figure{
+                display: flex;
+            }
+        }
+     
+
+
+        h2{
+            flex-basis: 100%;
+            text-align: center;
+        }
+        figure{
+            flex-basis: 25%;
+            border-radius: 40px;
+            overflow: hidden;
+            flex-direction: column;
+            display: none;
+        
+    
+           
+            figcaption{
+                text-align: justify;
+                padding: 5%;
+                background-color: white;
+                font-size: large;
+                border-top: solid;
+            }
+        }
+
+    }
+}
+
+
+
+

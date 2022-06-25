@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "banhaus";
+  src: url(/Style/BauhausRegular.ttf);
+}
+* {
+  color: black;
+  font-family: "banhaus", "Times New Roman", Times, serif;
+}
+
+h1, h2 {
+  text-decoration: underline;
+}
+
+body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0%;
+}
+body header {
+  flex-basis: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header h1 {
+  font-size: xx-large;
+}
+body header nav {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+body header nav a {
+  font-size: xx-large;
+}
+body #me {
+  flex-basis: 40%;
+  margin-top: 30px;
+  border-radius: 40px;
+  background-color: rgb(33, 64, 154);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body #me:hover p {
+  display: flex;
+}
+body #me h2 {
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}
+body #me p {
+  text-align: justify;
+  padding: 5%;
+  color: white;
+  font-size: large;
+  display: none;
+  transition: none 2s;
+}
+body #skills {
+  flex-basis: 40%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(190, 30, 45);
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body #skills:hover li {
+  display: flex;
+}
+body #skills h2 {
+  text-align: center;
+  color: white;
+}
+body #skills ul {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+body #skills ul li {
+  border: solid;
+  flex-basis: 15%;
+  margin: 2%;
+  text-align: center;
+  padding: 2%;
+  color: white;
+  border-radius: 20px;
+  display: none;
+}
+body #projet {
+  margin-top: 30px;
+  flex-basis: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(255, 222, 23);
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+body #projet:hover figure {
+  display: flex;
+}
+body #projet h2 {
+  flex-basis: 100%;
+  text-align: center;
+}
+body #projet figure {
+  flex-basis: 25%;
+  border-radius: 40px;
+  overflow: hidden;
+  flex-direction: column;
+  display: none;
+}
+body #projet figure figcaption {
+  text-align: justify;
+  padding: 5%;
+  background-color: white;
+  font-size: large;
+  border-top: solid;
+}/*# sourceMappingURL=main.css.map */
