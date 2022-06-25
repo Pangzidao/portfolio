@@ -33,6 +33,14 @@ body header nav {
 }
 body header nav a {
   font-size: xx-large;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+body header nav a:hover {
+  border: solid;
+  border-radius: 50%;
+  padding: 10px;
+  transform: scale(1.1);
 }
 body #me {
   flex-basis: 40%;
@@ -45,7 +53,7 @@ body #me {
   transition: height 0.5s;
 }
 body #me:hover {
-  height: 200px;
+  height: 250px;
 }
 body #me h2 {
   text-align: center;
@@ -107,15 +115,15 @@ body #projet {
   transition: height 0.5s;
 }
 body #projet:hover {
-  height: 600px;
+  height: 450px;
 }
 body #projet h2 {
   flex-basis: 100%;
   text-align: center;
+  color: black;
 }
 body #projet figure {
   flex-basis: 25%;
-  border-radius: 40px;
   overflow: hidden;
   flex-direction: column;
   display: flex;
