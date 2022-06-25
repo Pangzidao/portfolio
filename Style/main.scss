@@ -45,11 +45,13 @@ body{
         border-radius: 40px;
         background-color: rgb(33, 64, 154);
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        height: fit-content;
+        height: 80px;
+        overflow: hidden;
+        transition:height 0.5s;
         &:hover{
-            p{
-                display: flex;}
+            height:200px;
         }
+ 
         h2{
             text-align: center;
             color: white;
@@ -62,8 +64,6 @@ body{
             padding: 5%;
             color: white;
             font-size: large;
-            display:none;
-            transition:none 2s;
         }
     }
 
@@ -75,11 +75,11 @@ body{
         background-color: rgb(190,30,45);
         border-radius: 40px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        height: fit-content;
+        height: 80px;
+        overflow: hidden;
+        transition:height 0.5s;
         &:hover{
-            li{
-                display: flex;
-            }
+            height:200px;
         }
 
 
@@ -104,7 +104,6 @@ body{
                 padding: 2%;
                 color: white;
                 border-radius: 20px;
-                display: none;
             }
         }
 
@@ -119,10 +118,11 @@ body{
         background-color: rgb(255,222,23);
         border-radius: 40px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        height: 80px;
+        overflow: hidden;
+        transition:height 0.5s;
         &:hover{
-            figure{
-                display: flex;
-            }
+            height:600px;
         }
      
 
@@ -136,7 +136,7 @@ body{
             border-radius: 40px;
             overflow: hidden;
             flex-direction: column;
-            display: none;
+            display: flex;
         
     
            

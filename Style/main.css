@@ -40,12 +40,12 @@ body #me {
   border-radius: 40px;
   background-color: rgb(33, 64, 154);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 80px;
+  overflow: hidden;
+  transition: height 0.5s;
 }
-body #me:hover p {
-  display: flex;
+body #me:hover {
+  height: 200px;
 }
 body #me h2 {
   text-align: center;
@@ -57,8 +57,6 @@ body #me p {
   padding: 5%;
   color: white;
   font-size: large;
-  display: none;
-  transition: none 2s;
 }
 body #skills {
   flex-basis: 40%;
@@ -68,12 +66,12 @@ body #skills {
   background-color: rgb(190, 30, 45);
   border-radius: 40px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 80px;
+  overflow: hidden;
+  transition: height 0.5s;
 }
-body #skills:hover li {
-  display: flex;
+body #skills:hover {
+  height: 200px;
 }
 body #skills h2 {
   text-align: center;
@@ -94,7 +92,6 @@ body #skills ul li {
   padding: 2%;
   color: white;
   border-radius: 20px;
-  display: none;
 }
 body #projet {
   margin-top: 30px;
@@ -105,9 +102,12 @@ body #projet {
   background-color: rgb(255, 222, 23);
   border-radius: 40px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  height: 80px;
+  overflow: hidden;
+  transition: height 0.5s;
 }
-body #projet:hover figure {
-  display: flex;
+body #projet:hover {
+  height: 600px;
 }
 body #projet h2 {
   flex-basis: 100%;
@@ -118,7 +118,7 @@ body #projet figure {
   border-radius: 40px;
   overflow: hidden;
   flex-direction: column;
-  display: none;
+  display: flex;
 }
 body #projet figure figcaption {
   text-align: justify;
