@@ -33,14 +33,13 @@ body header nav {
 }
 body header nav a {
   font-size: xx-large;
-  transition: all 0.5s;
+  transition: all 0.2s;
   text-decoration: none;
+  padding: 15px;
 }
 body header nav a:hover {
   border: solid;
   border-radius: 50%;
-  padding: 10px;
-  transform: scale(1.1);
 }
 body #me {
   flex-basis: 40%;
@@ -50,7 +49,7 @@ body #me {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   height: 80px;
   overflow: hidden;
-  transition: height 0.5s;
+  transition: height 0.3s;
 }
 body #me:hover {
   height: 250px;
@@ -76,7 +75,7 @@ body #skills {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   height: 80px;
   overflow: hidden;
-  transition: height 0.5s;
+  transition: height 0.3s;
 }
 body #skills:hover {
   height: 200px;
@@ -112,7 +111,7 @@ body #projet {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   height: 80px;
   overflow: hidden;
-  transition: height 0.5s;
+  transition: height 0.4s;
 }
 body #projet:hover {
   height: 450px;
