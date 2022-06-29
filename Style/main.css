@@ -1,6 +1,6 @@
 @font-face {
   font-family: "banhaus";
-  src: url(/Style/BauhausRegular.ttf);
+  src: url(BauhausRegular.ttf);
 }
 * {
   color: black;
