@@ -3,12 +3,7 @@
   src: url(BauhausRegular.ttf);
 }
 * {
-  color: black;
   font-family: "banhaus", "Times New Roman", Times, serif;
-}
-
-h1, h2 {
-  text-decoration: underline;
 }
 
 body {
@@ -16,73 +11,111 @@ body {
   flex-flow: row wrap;
   justify-content: space-around;
   margin: 0%;
+  background-color: white;
 }
 body header {
-  flex-basis: 90%;
   display: flex;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 1px 4px 8px 4px rgba(0, 0, 0, 0.2);
+  background-color: #6200EE;
 }
 body header h1 {
   font-size: xx-large;
+  margin-left: 60px;
+  color: white;
 }
 body header nav {
   flex-basis: 20%;
   display: flex;
   justify-content: space-between;
+  margin-right: 40px;
 }
 body header nav a {
   font-size: xx-large;
   transition: all 0.2s;
   text-decoration: none;
   padding: 15px;
+  color: white;
 }
 body header nav a:hover {
-  border: solid;
-  border-radius: 50%;
+  text-decoration: underline;
+  color: #03DAB6;
 }
 body #me {
-  flex-basis: 40%;
-  margin-top: 30px;
-  border-radius: 40px;
-  background-color: rgb(33, 64, 154);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  height: 80px;
-  overflow: hidden;
-  transition: height 0.3s;
+  flex-basis: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 20px;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
 }
-body #me:hover {
-  height: 250px;
+body #me .title {
+  height: 40%;
 }
 body #me h2 {
   text-align: center;
-  color: white;
-  font-size: x-large;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+body #me h3 {
+  text-align: center;
+  font-size: 2rem;
 }
 body #me p {
   text-align: justify;
-  padding: 5%;
-  color: white;
-  font-size: large;
+  font-size: 1.5rem;
+  width: 40vw;
 }
 body #skills {
   flex-basis: 40%;
-  margin-top: 30px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
-  background-color: rgb(190, 30, 45);
-  border-radius: 40px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  height: 80px;
-  overflow: hidden;
-  transition: height 0.3s;
-}
-body #skills:hover {
-  height: 200px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  align-items: center;
+  border-radius: 20px;
 }
 body #skills h2 {
   text-align: center;
+  font-size: 3rem;
+}
+body #skills #skills-icons {
+  display: flex;
+  flex-flow: row wrap;
+  height: 70%;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+}
+body #skills #skills-icons figure {
+  background-color: #03DAB6;
   color: white;
+  width: 110px;
+  height: 110px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+body #skills #skills-icons figure:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+body #skills #skills-icons figure i {
+  font-size: 2rem;
+  margin: 1rem;
+}
+body #skills #skills-icons figcaption {
+  text-align: center;
 }
 body #skills ul {
   display: flex;
@@ -97,40 +130,62 @@ body #skills ul li {
   margin: 2%;
   text-align: center;
   padding: 2%;
-  color: white;
-  border-radius: 20px;
 }
 body #projet {
-  margin-top: 30px;
-  flex-basis: 90%;
+  margin: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgb(255, 222, 23);
-  border-radius: 40px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  height: 80px;
-  overflow: hidden;
-  transition: height 0.4s;
-}
-body #projet:hover {
-  height: 450px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
 }
 body #projet h2 {
   flex-basis: 100%;
   text-align: center;
-  color: black;
+  font-size: 3rem;
 }
 body #projet figure {
   flex-basis: 25%;
   overflow: hidden;
   flex-direction: column;
   display: flex;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: 1px 4px 8px 4px rgba(0, 0, 0, 0.2);
 }
 body #projet figure figcaption {
   text-align: justify;
   padding: 5%;
-  background-color: white;
   font-size: large;
   border-top: solid;
+}
+body footer {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6200EE;
+  margin-top: 40px;
+  color: white;
+}
+body footer h2 {
+  font-size: 2rem;
+  margin-left: 80px;
+}
+body footer #social-icons {
+  display: flex;
+}
+body footer #social-icons figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 80px;
+}
+body footer #social-icons figure i {
+  font-size: 3rem;
+}
+body footer #social-icons figure figcaption {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
