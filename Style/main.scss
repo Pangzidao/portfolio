@@ -3,232 +3,115 @@
     src: url(BauhausRegular.ttf);
 }
 
-
-
 $couleur1:#c93434;
-
  
 *{
     font-family:"banhaus", sans-serif,'Times New Roman', Times, serif;
-    font-weight: 500;
+    box-sizing: border-box;
     color: black;
+    text-decoration: none;
 }
 
+.logo{
+    width: 100px;
+}
 body{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
     margin: 0%;
-
+    display: flex;
+    flex-flow: column;
 
     header{
-        display: flex;
+        border: solid;
+        height: 120px;
         width: 100vw;
-        justify-content: space-between;
-        align-items: center;
-        background-color:white;
-
-
-        img{
-            width: 100px;
-            margin-left: 50px;
-        }
-
-    
-        nav{
-            flex-basis: 20%;
-            display: flex;
-            justify-content: space-between;
-            margin-right: 40px;
-            a{
-                font-size: xx-large;
-                transition: all 0.2s;
-                text-decoration: none;
-                padding:15px;
-                &:hover{
-                    text-decoration: underline;
-                }
-            }
-
-        }
-
-    }
-
-    #me{
-        flex-basis: 100vw;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        margin: 20px;
-        padding: 40px;
-
-        .title{
-            height: 40%;
-        }
-         h2{
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-
-        h3{
-            text-align: center;
-            font-size: 2rem;
-
-        }
-
-        p{
-            text-align: justify;
-            font-size: 1.5rem;
-            width: 40vw;
-        }
-    }
-
-    #skills{
-        flex-basis:100vw;
-        margin:20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h2{
-            text-align: center;
-            font-size: 2.5rem;
-        }
-
-        #skills-icons{
-            display: flex;
-            flex-flow: row wrap;
-            height:70%;
-            align-items: center;
-            justify-content: space-around;
-            border-radius: 20px;
-
-            figure{
-                    background-color: #c93434;
-                    width: 110px;
-                    height: 110px;
-                    border-radius: 20px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    box-shadow: 1px 4px 8px 4px rgba(0,0,0,0.2);
-
-
-                    &:hover{
-                        transform: scale(1.1);
-                        cursor: pointer;
-
-                    }
-
-                i{
-                    font-size: 2rem;
-                    margin: 1rem;
-                    color: white;
-
-                    
-                }
-            }
-          
-
-            figcaption{
-                text-align: center;
-                color: white;
-
-            }
-        }
-
-        ul{
-            display: flex;
-            flex-basis: 100%;
-            align-items: center;
-            list-style: none;
-            flex-wrap: wrap;
-            li{
-                border:solid;
-                flex-basis: 15%;
-                margin: 2%;
-                text-align: center;
-                padding: 2%;
-
-            }
-        }
-
-    }
-
-    #projet{
-        margin:50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        border-radius: 20px;
-
-     
-
-
-        h2{
-            flex-basis: 100%;
-            text-align: center;
-            font-size: 3rem;
-        }
         figure{
-            flex-basis: 25%;
-            overflow: hidden;
-            flex-direction: column;
-            display: flex;
-            margin-bottom: 40px;
-            border-radius: 20px;
-            box-shadow: 1px 4px 8px 4px rgba(0,0,0,0.2);
-
-        
-    
-           
-            figcaption{
-                text-align: justify;
-                padding: 5%;
-                font-size: large;
-                border-top: solid;
-            }
+            flex-basis: 200px;
+            margin: 0 0 0 16px;
         }
 
+        #title{
+            flex-grow:1;
+            text-align: center;
+        }
     }
 
-    footer{
-        width: 100vw;
+    aside{
+        border: solid;
+        position: fixed;
+        left: 0;
+        top:120px;
+        bottom: 120px;
+        width: 200px;
+        nav{
+            ul{
+                li{
+                    margin-top: 40px;
+                }
+            }
+
+        }
+    }
+
+    main{
+        top:100px;
+        left: 200px;
+        margin-left: 200px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 40px;
-        box-shadow: 1px 4px 8px 4px rgba(0,0,0,0.2);
-        img{
-            width: 100px;
-            margin-left: 50px;
+        flex-direction: column; 
+       
+
+        #me{
+            border: solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 100px;
         }
 
-        #social-icons{
+        #projet{
+            border: solid;
             display: flex;
-        
-            figure{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                margin-right: 80px;
+            flex-direction: column;
+            padding: 100px;
+            justify-content: center;
+            align-items: center;
 
-                i{
-                    font-size: 3rem;
-                }
-                figcaption{
-                    text-align: center;
+            figure{
+                width: 200px;
+                img{
+                    width: 200px;
                 }
             }
-          
-        }
-    }
-}
 
+        }
+    
+        #skills{
+            border: solid;
+            display: flex;
+            flex-direction: column;
+            padding: 100px;
+            justify-content: center;
+            align-items: center;
+
+        }
+    
+    
+
+
+    }       
+    footer{
+        border:solid;
+        height: 120px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+}
 
 
 
