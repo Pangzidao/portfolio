@@ -3,15 +3,15 @@
     src: url(BauhausRegular.ttf);
 }
 
-$couleur1:#6200EE;
-$couleur2:#3700B3;
-$couleur3:#03DAB6;
-$couleur4:#018786;
-$couleur5:#B00020;
+
+
+$couleur1:#c93434;
 
  
 *{
-    font-family:"banhaus",'Times New Roman', Times, serif;
+    font-family:"banhaus", sans-serif,'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: black;
 }
 
 body{
@@ -19,22 +19,22 @@ body{
     flex-flow: row wrap;
     justify-content: space-around;
     margin: 0%;
-    background-color:white;
+
 
     header{
         display: flex;
         width: 100vw;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 1px 4px 8px 4px rgba(0,0,0,0.2);
-        background-color: $couleur1;
+        background-color:white;
 
-        h1{
-            font-size: xx-large;
-            margin-left: 60px;
-            color: white;
+
+        img{
+            width: 100px;
+            margin-left: 50px;
         }
 
+    
         nav{
             flex-basis: 20%;
             display: flex;
@@ -45,10 +45,8 @@ body{
                 transition: all 0.2s;
                 text-decoration: none;
                 padding:15px;
-                color:white;
                 &:hover{
                     text-decoration: underline;
-                    color: $couleur3;
                 }
             }
 
@@ -57,16 +55,13 @@ body{
     }
 
     #me{
-        flex-basis: 40vw;
+        flex-basis: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        background-color: white;
         margin: 20px;
         padding: 40px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        border-radius: 20px;
 
         .title{
             height: 40%;
@@ -91,18 +86,15 @@ body{
     }
 
     #skills{
-        flex-basis:40%;
+        flex-basis:100vw;
         margin:20px;
         display: flex;
         flex-direction: column;
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         align-items: center;
-        border-radius: 20px;
 
         h2{
             text-align: center;
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
 
         #skills-icons{
@@ -114,8 +106,7 @@ body{
             border-radius: 20px;
 
             figure{
-                    background-color: $couleur3;
-                    color:white;
+                    background-color: #c93434;
                     width: 110px;
                     height: 110px;
                     border-radius: 20px;
@@ -124,6 +115,7 @@ body{
                     align-items: center;
                     flex-direction: column;
                     box-shadow: 1px 4px 8px 4px rgba(0,0,0,0.2);
+
 
                     &:hover{
                         transform: scale(1.1);
@@ -134,6 +126,8 @@ body{
                 i{
                     font-size: 2rem;
                     margin: 1rem;
+                    color: white;
+
                     
                 }
             }
@@ -141,6 +135,8 @@ body{
 
             figcaption{
                 text-align: center;
+                color: white;
+
             }
         }
 
@@ -167,8 +163,6 @@ body{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border-radius: 20px;
 
      
@@ -206,13 +200,13 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: $couleur1;
         margin-top: 40px;
-        color: white;
-        h2{
-            font-size: 2rem;
-            margin-left: 80px;
+        box-shadow: 1px 4px 8px 4px rgba(0,0,0,0.2);
+        img{
+            width: 100px;
+            margin-left: 50px;
         }
+
         #social-icons{
             display: flex;
         
