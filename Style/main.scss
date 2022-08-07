@@ -21,6 +21,7 @@ body{
         width: 100vw;
         display: flex;
         align-items: center;
+        background-color: yellow;
         figure{
             flex-basis: 200px;
             margin: 0 0 0 16px;
@@ -29,6 +30,12 @@ body{
         #title{
             flex-grow:1;
             text-align: center;
+        }
+
+        button{
+            padding: 10px;
+            border: solid black;
+            background-color: white;
         }
     }
 
@@ -39,6 +46,7 @@ body{
         top:120px;
         bottom: 120px;
         width: 200px;
+        background-color: blue;
         nav{
             ul{
                 li{

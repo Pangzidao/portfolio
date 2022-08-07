@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="style/normalize.css"/>
         <link rel="stylesheet" href="style/main.css">
         <script src="https://kit.fontawesome.com/513c2c7c9c.js" crossorigin="anonymous"></script>
         <title>Portfolio</title>
@@ -14,18 +13,20 @@
                 <img class="logo" src="logo.png" alt="logo">
             </figure>
             <div id="title">
-                <h1>Nicolas Le Jeune</h2>
-                <h2>Junior Front End Developer</h3>
+                <h1 class="text">Nicolas Le Jeune</h2>
+                <h2 class="text">Junior Front End Developer</h3>
             </div>
+
+            <button type="button" id="modeButton" onclick="changeMode()">Light Mode</button>
         </header>
 
         <aside>
             <nav>
                 <ul>
-                    <li><a href="#me">À propos</a></li>
-                    <li><a href="#projet">Projets</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a class="text" href="#me">À propos</a></li>
+                    <li><a class="text" href="#projet">Projets</a></li>
+                    <li><a class="text" href="#skills">Compétences</a></li>
+                    <li><a class="text" href="">Contact</a></li>
 
                 </ul>
             </nav>
@@ -34,8 +35,8 @@
         <main>
 
             <section id="me">
-                <h2>À propos</h2>
-                <p>Lorem ipsum dolor sit amet. 
+                <h2 class="text">À propos</h2>
+                <p class="text">Lorem ipsum dolor sit amet. 
                         Ad earum totam vel tempore accusantium 
                         qui omnis provident aut facere sint ut 
                         dolores illo. Qui facilis suscipit vel 
@@ -50,14 +51,14 @@
 
 
             <section id="projet">
-                <h2>Projets</h2>
+                <h2 class="text">Projets</h2>
                 <figure>
                     <img src="Images/Projet Ohmyfood.png">
-                    <figcaption>
+                    <figcaption class="text">
                         Site responsive de réservation de restaurant. Projet développé dans le cadre de ma formation à Open Classrooms.
                     </figcaption>
                 </figure>
-                <p>  Ad earum totam vel tempore accusantium 
+                <p class="text">  Ad earum totam vel tempore accusantium 
                     qui omnis provident aut facere sint ut 
                     dolores illo. Qui facilis suscipit vel 
                     similique nobis est dolores quis et quia 
@@ -69,31 +70,31 @@
 
             <section id="skills">
 
-                <h2>Compétences</h2>
+                <h2 class="text">Compétences</h2>
 
                     <figure>
                         <i class="fa-brands fa-html5"></i>
-                        <figcaption>HTML</figcaption>
+                        <figcaption class="text">HTML</figcaption>
                     </figure>
                     <figure>
                         <i class="fa-brands fa-css3-alt"></i>
-                        <figcaption>CSS</figcaption>                        
+                        <figcaption class="text">CSS</figcaption>                        
                     </figure>
                     <figure>
                         <i class="fa-brands fa-sass"></i>
-                        <figcaption>SCSS</figcaption>                                           
+                        <figcaption class="text">SCSS</figcaption>                                           
                     </figure>
                     <figure>
                         <i class="fa-brands fa-js"></i>
-                        <figcaption>JAVASCRIPT</figcaption>                        
+                        <figcaption class="text">JAVASCRIPT</figcaption>                        
                     </figure>
                     <figure>
                         <i class="fa-brands fa-git"></i>
-                        <figcaption>GIT</figcaption>                      
+                        <figcaption class="text">GIT</figcaption>                      
                     </figure>
                     <figure>
                         <i class="fa-brands fa-github"></i>
-                        <figcaption>GITHUB</figcaption>     
+                        <figcaption class="text">GITHUB</figcaption>     
                     </figure>
             
             </section>
@@ -109,13 +110,15 @@
                 </figure>
                 <figure>
                     <i class="fa-brands fa-linkedin"></i>
-                    <figcaption>LINKEDIN</figcaption>                        
+                    <figcaption class="text">LINKEDIN</figcaption>                        
                 </figure>
                 <figure>
                     <i class="fa-brands fa-github"></i>                        
-                    <figcaption>GITHUB</figcaption>                        
+                    <figcaption class="text">GITHUB</figcaption>                        
                 </figure>
             </footer>
+        
+        <script src="main.js"></script>
     </body>
 
 </html>

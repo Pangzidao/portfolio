@@ -20,6 +20,7 @@ body header {
   width: 100vw;
   display: flex;
   align-items: center;
+  background-color: yellow;
 }
 body header figure {
   flex-basis: 200px;
@@ -29,6 +30,11 @@ body header #title {
   flex-grow: 1;
   text-align: center;
 }
+body header button {
+  padding: 10px;
+  border: solid black;
+  background-color: white;
+}
 body aside {
   border: solid;
   position: fixed;
@@ -36,6 +42,7 @@ body aside {
   top: 120px;
   bottom: 120px;
   width: 200px;
+  background-color: blue;
 }
 body aside nav ul li {
   margin-top: 40px;
