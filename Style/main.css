@@ -1,12 +1,11 @@
-* {
-  font-family: helvetica, "banhaus", sans-serif, "Times New Roman", Times, serif;
-  box-sizing: border-box;
-  color: black;
-  text-decoration: none;
+@font-face {
+  font-family: "dosis";
+  src: url(/Dosis/Dosis-Medium.ttf);
 }
-
-.logo {
-  width: 100px;
+* {
+  font-family: "dosis", "banhaus", sans-serif, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -15,37 +14,54 @@ body {
   flex-flow: column;
 }
 body header {
-  border: solid;
-  height: 120px;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  background-color: yellow;
-}
-body header figure {
-  flex-basis: 200px;
-  margin: 0 0 0 16px;
-}
-body header #title {
-  flex-grow: 1;
-  text-align: center;
-}
-body header button {
-  padding: 10px;
-  border: solid black;
-  background-color: white;
-}
-body aside {
-  border: solid;
-  position: fixed;
-  left: 0;
-  top: 120px;
-  bottom: 120px;
+  height: 200px;
   width: 200px;
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-color: #001730;
 }
-body aside nav ul li {
-  margin-top: 40px;
+body header .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body header h1 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+body nav {
+  width: 200px;
+  margin-top: 100px;
+  position: fixed;
+  top: 100px;
+  background-color: #001730;
+}
+body nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border-top: #4AD7D1 solid;
+  border-bottom: #4AD7D1 solid;
+}
+body nav ul li {
+  border-top: #4AD7D1 solid;
+  border-bottom: #4AD7D1 solid;
+  list-style: none;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body nav ul li a {
+  color: white;
 }
 body main {
   top: 100px;
@@ -54,8 +70,11 @@ body main {
   display: flex;
   flex-direction: column;
 }
+body main button {
+  padding: 10px;
+  background-color: white;
+}
 body main #me {
-  border: solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +82,6 @@ body main #me {
   padding: 0px 100px 100px 100px;
 }
 body main #projet {
-  border: solid;
   display: flex;
   flex-direction: column;
   padding: 100px;
@@ -77,7 +95,6 @@ body main #projet figure img {
   width: 200px;
 }
 body main #skills {
-  border: solid;
   display: flex;
   flex-direction: column;
   padding: 100px;
@@ -85,9 +102,16 @@ body main #skills {
   align-items: center;
 }
 body footer {
-  border: solid;
-  height: 120px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  bottom: 0px;
+  background-color: #001730;
+  border-top: 6px solid #4AD7D1;
+}
+body footer figure i {
+  color: #4AD7D1;
+}
+body footer figure figcaption {
+  color: white;
 }/*# sourceMappingURL=main.css.map */
